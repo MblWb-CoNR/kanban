@@ -65,11 +65,11 @@ Vue.component('column', {
         editCard(cardIndex) {
             this.$emit('edit-card', this.columnIndex, cardIndex);
         },
-        deleteCard(cardIndex) {
-            this.$emit('delete-card', this.columnIndex, cardIndex);
-        },
         moveCard(cardIndex, toColumnIndex) {
             this.$emit('move-card', this.columnIndex, toColumnIndex, cardIndex);
+        },
+        deleteCard(cardIndex) {
+            this.$emit('delete-card', this.columnIndex, cardIndex);
         },
     }
 });
