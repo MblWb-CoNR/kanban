@@ -12,7 +12,6 @@
 </head>
 <body>
 <div id="app">
-    <board :columns="columns" @add-card="addCard" @edit-card="editCard" @delete-card="deleteCard" @move-card="moveCard"></board>
     <div class="add-card-form">
         <h3>Новая карточка</h3>
         <form @submit.prevent="saveCard">
@@ -22,6 +21,7 @@
             <button class="but" type="submit">Создать</button>
         </form>
     </div>
+    <board :columns="columns" @add-card="addCard" @edit-card="editCard" @delete-card="deleteCard" @move-card="moveCard"></board>
 </div>
 </body>
 </html>
